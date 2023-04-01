@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Video Controls</title>
+	<link rel="stylesheet" type="text/css" href="css/video.css">
+</head>
+<body> 
+<main>
+	<h1>JavaScript Video Controls</h1>
+	<div class = "options">
+		<button  id = "play" click>Play Video</button>
+		<button  id = "pause" click>Pause Video</button>
+		<button  id = "slower" click>Slow Down</button>
+		<button  id = "faster" click>Speed Up</button>
+		<button  id = "skip" click>Skip Ahead</button>
+	</div>
+
+	<figure>
+
+		<video class = "video"
+			width="640" 
+			height="360" 
+			id="player1" 
+			preload="auto"
+			src="assets/marchingband.mov">
+			  
+		    <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">	
+		  		Your browser does not support HTML5 video.
+		</video>
+		<figcaption>[The Michigan Marching Band]</figcaption>
+		</figure> 
+	<button id="mute" click>Mute</button><br>
+
+	<label for="slider">Volume</label>: 0 <input type="range" id="slider" min="0" max="100" value="100" step="10" change> 100%<br>
+	<div>Volume is: <span id = "volume"> </span><br><br></div>
+
+	<button id = "vintage" click>Old School</button>
+	<button id = "orig" click>Original</button>
+
+	<p>Video courtesy of Allison Sweet.</p>
+	<script src="js/video.js"></script>
+</main>
+</body> 
+</html>
